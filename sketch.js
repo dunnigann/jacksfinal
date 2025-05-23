@@ -209,11 +209,11 @@ let dialoguePhase = "prompt"; // 'prompt', 'response'
 
 
 function preload() {
-  elevatorImg = loadImage('jacksfinal/Assets/elevator.jpg');
-  bossImg = loadImage('jacksfinal/Assets/boss.png');
-  workerImg = loadImage('jacksfinal/Assets/worker.png');
-  elevatorMusic = loadSound('jacksfinal/Assets/elevatormusic.mp3');
-  typingSound = loadSound('jacksfinal/Assets/typing.mp3');
+  elevatorImg = loadImage('Assets/elevator.jpg');
+  bossImg = loadImage('Assets/boss.png');
+  workerImg = loadImage('Assets/worker.png');
+  elevatorMusic = loadSound('Assets/elevatormusic.mp3');
+  typingSound = loadSound('Assets/typing.mp3');
 
 }
 
