@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Elevator Pitch - Start</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    #container {
+      max-width: 900px;
+      margin: auto;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    #startButton {
+      margin-top: 50px;
+      padding: 20px 40px;
+      font-size: 24px;
+      border: none;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    #startButton:hover {
+      background-color: #333;
+    }
+    #volumeLabel {
+      margin-top: 40px;
+      font-size: 18px;
+    }
+    #volumeSlider {
+      width: 300px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p>
+      Picture this: you're a fresh faced intern straight out of your prestigious university and you have a golden ticket dropped on your lap -- the Boss steps into your long elevator ride with you! Now you have 65 floors to make an impression. Who doesn't love small talk right?
+    </p>
+    <p>
+      The meter on your left fills as you get nervous, so be careful! When it's full you won't be able to speak anymore! The meter to the right of the Boss fills as he tires of your mindless conversing, so be careful with that as well! Also there's a third meter that monitors how impressed the Boss is with your boot licking, but that's hidden. Just like real life, you sometimes can't tell if you're cooking in the conversational kitchen!
+    </p>
+    <p>
+      Ok, you're almost ready. You did minor stalking, so you know he's from New York, he went to school in the South, and he has a few grandchildren, one of which is about your age and goes to college somewhere in New York...
+    </p>
+
+    <div id="volumeLabel">Adjust volume:</div>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" />
+
+    <br/>
+    <button id="startButton">Start Elevator Ride</button>
+  </div>
+
+  <script>
+    document.getElementById("startButton").addEventListener("click", () => {
+      const volume = document.getElementById("volumeSlider").value;
+      localStorage.setItem("volume", volume);
+      window.location.href = "game.html";
+    });
+  </script>
+</body>
+</html>
