@@ -108,7 +108,7 @@ let dialogueTree = [
         effects: { annoyance: 2, shame: 0, impressed: 0 } },
       { text: "The Yankees?",
         response: "Boss: No.",
-        next: null,
+        next: 1,
         effects: { annoyance: 2, shame: 3, impressed: 0 } },
       { text: "The 'cuse of course",
         response: "You're a lacrosse fan? My grandson actually plays for the Orange",
