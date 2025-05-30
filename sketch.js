@@ -212,7 +212,7 @@ function preload() {
   elevatorImg = loadImage('Assets/elevator.JPG');
   bossImg = loadImage('Assets/boss.png');
   workerImg = loadImage('Assets/worker.png');
-  elevatorMusic = loadSound('Assets/elevatormusic.mp3');
+  elevatorMusic = loadSound('Assets/updatedmusic.mp3');
   typingSound = loadSound('Assets/typing.mp3');
 
 }
